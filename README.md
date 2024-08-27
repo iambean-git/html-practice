@@ -1,1 +1,1 @@
-# html-practice
+# K-digital 8기
