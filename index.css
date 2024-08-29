@@ -4,6 +4,10 @@
     box-sizing: border-box;     /* padding 및 margin 설정이 width, height 내에서 설정되도록 */
 }
 
+head, body{
+    background-color:rgb(250, 241, 242);
+}
+
 h1 {
     text-align: center;
     color: rgb(125,89,89);
@@ -31,17 +35,22 @@ a {
 main {
     margin: 5%;
     padding: 5%;
-    background-color:rgb(250, 241, 242);
+    background-color:rgb(255, 255, 255);
     text-align: center; 
 
 }
 
 li{
     margin: 2%;
-    padding: 2%;
-    width: 80%;
+    padding: 3%;
+    width: 95%;
     background-color:rgb(241, 209, 210);
     border-radius: 10px;
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight : 500;
+    font-style: normal;
+    font-size: 150%;
 } 
 
 li:hover {
