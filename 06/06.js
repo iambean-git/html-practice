@@ -1,23 +1,30 @@
 //dom 생성된 후 이벤트 감지
 document.addEventListener('DOMContentLoaded', ()=>{
 
-    const bt1 = document.getElementById('bt1');
-    const bt2 = document.getElementById('bt2');
-    const bt3 = document.getElementById('bt3');
-    const bt4 = document.getElementById('bt4');
-    const bt5 = document.getElementById('bt5');
-    const bt6 = document.getElementById('bt6');
-
-    const img1 = document.getElementById('img1');
-    const img2 = document.getElementById('img2');
-
-    bt3.addEventListener('click', ()=>{
-        let n = Math.floor(Math.random()*6) + 1;
-        console.log("n is" ,n)
-        img1.setAttribute('src', `../img/${n}.png`);
-        img2.setAttribute('src', `../img/3.png`);
-    });
-
+    //이미지 가져오기
+    const imgs = document.querySelectorAll('.dice>img');
     
+    //버튼 가져오기
+    const btns = document.querySelectorAll('.btn');
+        
+    //결과확인 텍스트
+    const msg = document.getElementById('msg');
+    console.log(msg);
+
+    for (let bt of btns){
+        //console.log(bt);
+        bt.addEventListener('click', ()=>{
+            let comN = Math.floor(Math.random()*6) + 1;
+            //console.log(bt.textContent.charAt(0));        //글 내용에서 첫글자 가져옴
+            let userN = parseInt(bt.textContent.charAt(0));
+            imgs[0].setAttribute('src', `../img/${comN}.png`);
+            imgs[1].setAttribute('src', `../img/${userN}.png`);
+            if (comN===userN) {
+                msg.innerHTML = '맞춤';
+            } else {
+                msg.innerHTML = '틀림';
+            }
+        });
+    }
 
 }); 
