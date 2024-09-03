@@ -18,11 +18,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
             //console.log(bt.textContent.charAt(0));        //글 내용에서 첫글자 가져옴
             let userN = parseInt(bt.textContent.charAt(0));
             imgs[0].setAttribute('src', `../img/${comN}.png`);
+            imgs[0].setAttribute('alt', `${comN}.png`);
+
             imgs[1].setAttribute('src', `../img/${userN}.png`);
+            imgs[1].setAttribute('alt', `${userN}.png`);
             if (comN===userN) {
-                msg.innerHTML = '맞춤';
+                msg.innerHTML = '맞았어요!';
             } else {
-                msg.innerHTML = '틀림';
+                msg.textContent = '틀렸어요!';            
             }
         });
     }
