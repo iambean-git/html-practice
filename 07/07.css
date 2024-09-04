@@ -16,7 +16,6 @@
 .col {
     width: 50%;
     height: 40px;
-
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -30,7 +29,7 @@ select, input {
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #fceeff;
+    background-color: #f1f1f1;
     
 }
 
@@ -43,4 +42,12 @@ select{
 input{
     width: 73%;
     margin-right: 3%;
+}
+
+label{
+    font-weight: bold;
+}
+
+#txt2 {
+    background-color: #f3e8f7;
 }
