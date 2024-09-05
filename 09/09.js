@@ -7,20 +7,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     //회문확인
+    btn1.addEventListener('click', (e)=> {
+        e.preventDefault();
+        let s1 = txt1.value.replaceAll(' ',''); //공백 날리기
+        let s2 = '';
+
+        //반복문 이용
+        // for(let i=s1.length-1; i>=0; i--){
+        //     s2 = s2 + s1[i];
+        // }
+
+        s2 = s1.split('').reverse().join('');    //한글자씩 쪼개서 배열로 반환 후 다시 합치기
+        
+        if (s1==s2) txt2.value = "회문입니다";
+        else txt2.value = "회문이 아닙니다";
+        console.log('s1 = ',s1);
+        console.log('s1 = ',s2);
+    });
 
 
     //숫자합계
     btn2.addEventListener('click', (e)=>{
-        e.preventDefault;
-        
-
+        let sum = 0;
+        e.preventDefault();
         for(let c of txt1.value){
-            console.log(isNaN(c));
+            if(!isNaN(c)){
+                sum += parseInt(c);
+            }
         }
+        txt2.value = sum;
     });
 
-    // for(let c of s){
-    //     console.log(isNaN(c));         //of는 값을 가짐 (글자 그 자체)
         
     // }
 });

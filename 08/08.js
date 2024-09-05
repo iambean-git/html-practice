@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     num.focus();    //커서 위치하도록
     btn.addEventListener('click', (e)=>{
-        e.preventDefault;
+        e.preventDefault();
 
         if (!flag){
             n = Math.floor(Math.random()*100) + 1;
