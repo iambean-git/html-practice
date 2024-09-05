@@ -1,0 +1,21 @@
+.sec{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec > input {
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+}
+
+#txt2 {
+    background-color: antiquewhite;
+}
+
+.sec > button {
+    width: 15%;
+    margin: 2%;
+}
