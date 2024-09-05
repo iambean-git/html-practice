@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let cnt = 0;
         e.preventDefault();
         for(let c of txt1.value){
-            if(!isNaN(c)){
+            if(c!=' ' && !isNaN(c)){
                 sum += parseInt(c);
                 cnt ++;
             }
