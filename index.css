@@ -34,7 +34,7 @@ a {
     color: rgb(125, 89, 89);
 }
 main {
-    margin: 5%;
+    margin: 5% 20% 5% 20%;
     padding: 5%;
     background-color:rgb(255, 255, 255);
     text-align: center; 
