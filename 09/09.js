@@ -29,13 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
     //숫자합계
     btn2.addEventListener('click', (e)=>{
         let sum = 0;
+        let cnt = 0;
         e.preventDefault();
         for(let c of txt1.value){
             if(!isNaN(c)){
                 sum += parseInt(c);
+                cnt ++;
             }
         }
-        txt2.value = sum;
+        
+        if (cnt==0) {
+            txt2.value = "숫자가 존재하지 않습니다.";
+        } else        txt2.value = sum;
     });
 
         
