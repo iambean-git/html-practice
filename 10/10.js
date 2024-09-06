@@ -33,9 +33,22 @@ document.addEventListener('DOMContentLoaded', () => {
         spanBonus.innerHTML = numBonus;
         spanBonus.setAttribute('class',`sp${parseInt(numBonus/10)}`);
 
+        /*
+        //html에 span 다 지운경우 (교수님버전)
+        arr = arr.map(item=>`<span class = sp${Math.floor(item/10)}>${item}</span>`);
+        arr = arr.join('');
+        divNum.innerHTML = arr;
+
+        //보너스도 동일하게
+
+        */
+       
         divNum[0].style.display = "flex";
         divNum[1].style.display = "flex";
         divplus.style.display = "flex";
+
+        
+
     });
 
 });
