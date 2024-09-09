@@ -29,7 +29,6 @@ for(let [k,item] of Object.entries(obj)){
 }
 
 //자료추가
-obj['orange'] = '🍊'
 obj['수박'] = '🍉'
 console.log(obj);
 
@@ -39,4 +38,9 @@ console.log(obj);
 
 //자료삭제
 delete obj['수박'];
+console.log(obj);
+
+//object 병합
+obj2 = {'orange' : '🍊'};
+obj = {...obj, ...obj2};
 console.log(obj);
