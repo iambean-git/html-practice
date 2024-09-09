@@ -3,6 +3,33 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const btns2 = document.querySelectorAll('.secBt2');
     const btns3 = document.querySelectorAll('.secBt3');
     const txt = document.querySelector('#txt1');
+    const btn4_1 = document.querySelector("#secBt4_1");
+    const btn4_2 = document.querySelector("#secBt4_2");
+
+    //object 생성
+    let obj = {
+        'apple':'🍎', 
+        'carrot':'🥕', 
+        'banana' : '🍌',
+    };
+
+    let jsonData ;
+    btn4_1.addEventListener('click', (e)=>{
+        e.preventDefault();
+
+        jsonData = JSON.stringify(obj);
+        console.log('obj = ', obj);
+        console.log('obj = ', jsonData);
+    });
+
+    btn4_2.addEventListener('click', (e)=>{
+        e.preventDefault();
+
+        let obj2 = JSON.parse(jsonData);
+        
+        console.log('obj2 = ', obj2);
+        console.log('obj2["apple"] = ', obj2["apple"]);
+    });
 
     for(let btn of btns1){
         btn.addEventListener('click', (e)=>{
