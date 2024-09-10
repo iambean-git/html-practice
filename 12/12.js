@@ -15,7 +15,7 @@ const getData = (selDt, ul) =>{
             let tm = dailyBoxOfficeList.map(item => 
                 `<li class="mvli">
                     <span class = "rank"> ${item.rank} </span>
-                    <span class ="movieNM"> ${item.movieNm} </span>
+                    <span class ="movieNM"> ${item.movieNm} (${item.openDt})</span>
                 </li>`);
             ul.innerHTML = tm.join('');
             ul.style.border = '1px dotted rgb(177, 177, 177)';
