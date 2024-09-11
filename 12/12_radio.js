@@ -47,6 +47,12 @@ const getData = (selDt, ul,radioBtn) =>{
         .catch( err => console.error(err));
 }
 
+//radio값 가져오기
+const getRadio = () => {
+    //라디오 요소 가져오기
+    
+}
+
 //어제 날짜 구하기 함수
 const getYesterday = () => {
     const yesterday = new Date();
