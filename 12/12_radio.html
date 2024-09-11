@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 자바스크립트 박스오피스 </title>
+    <link rel="stylesheet" type="text/css" href="../js.css">
+    <link rel="stylesheet" type="text/css" href="./12_radio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- 외부 스크립트 작성 방법 -->
+    <script src="./12_radio.js"> </script>
+</head>
+
+<body>
+    <header>
+        <h1> 자바스크립트 - 박스오피스 </h1>
+        <a href="../index.html"><img src="../img/home.png" id="home"></a>
+    </header>
+
+    <form>
+        <main id="boxofficeMain">
+            <section class="sec">
+                <div class="divDt">
+                    <input type="date" id="dt" name="dt" />
+                    <fieldset>
+                        <input type="radio" id="r1" name="nation" value="default" checked="checked">
+                        <label for="r1"> 전체 </label>
+                        <input type="radio" id="r2" name="nation" value="K">
+                        <label for="r2"> 한국영화 </label>
+                        <input type="radio" id="r3" name="nation" value="F">
+                        <label for="r3"> 외국영화 </label>
+                    </fieldset>
+                    
+                </div>
+                
+                
+            </section>
+
+            <section class="sec">
+                <ul>
+                    <!-- <li class="mvli">
+                        <span class="rank"> 1 </span>
+                        <span class="movieNM">미션임파서블:고스트프로토콜</span>
+                        <sapn class="openDt">2020-01-01</span>
+                        <span class="rankInten"> -1 </span>
+                    </li> -->
+                    
+                </ul>
+            </section>
+
+
+        </main>
+    </form>
+</body>
+
+</html>
