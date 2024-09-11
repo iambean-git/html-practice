@@ -9,7 +9,7 @@
     
 }
 
-.sec, .divDt, ul{
+.sec, ul{
     display: flex;
 
     flex-direction: column;
@@ -29,11 +29,23 @@
     background-color: rgb(253, 245, 255);
     border-radius: 10px ;
     border: 1px dotted #cb99c5;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type=date]{
     width: 40%;
     height: 50%;
+}
+
+select{
+    width: 15%;
+    height: 50%;
+    margin-left: 10%;
 }
 
 ul{
@@ -75,4 +87,27 @@ ul{
     font-size: small;
     color: white;
     padding-bottom: 2px;
+}
+
+.movieNM {
+    width: 50%;
+}
+  
+.openDt {
+    width: 30%;
+}
+  
+.rankInten {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spRed {
+    color: red;
+}
+  
+  .spBlue {
+    color: blue;
 }
