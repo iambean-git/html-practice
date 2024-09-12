@@ -1,12 +1,19 @@
-#boxofficeMain{
+#boxofficeMain, #mvfooter{
     display: flex;
-    height: 600px;
 
     flex-direction: column;
     justify-content: start;
     align-items: center;
     padding-top: 1%;
     
+}
+
+#boxofficeMain{ 
+    height: 600px;
+}
+
+#mvfooter{
+    height: 150px; 
 }
 
 .sec, ul{
@@ -20,6 +27,12 @@
 .sec {
     width: 100%;
     /* height: 13%; */
+}
+
+#mvinfo{
+    width: 80%;
+    height: 100%;
+    border: 1px dotted #cb99c5;
 }
 
 .divDt{
@@ -37,30 +50,9 @@
     align-items: center;
 }
 
-input[type=date], fieldset{
+input[type=date]{
     width: 40%;
     height: 50%;
-}
-
-fieldset{
-    border: none;
-    display: flex;
-
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5%;
-}
-
-label{
-    margin-left: 1%;
-    margin-right: 5%;
-}
-
-ul > a{
-    text-decoration: none;
-    display: flex;
-    width: 100%;
 }
 
 select{

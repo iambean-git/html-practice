@@ -1,12 +1,26 @@
-#boxofficeMain{
+#boxofficeMain, #mvfooter{
     display: flex;
-    height: 600px;
 
     flex-direction: column;
     justify-content: start;
     align-items: center;
     padding-top: 1%;
     
+}
+
+#boxofficeMain{ 
+    height: 600px;
+}
+
+#mvfooter{
+    
+    width: 100%;
+}
+
+#mvinfo{
+    width: 80%;
+    height: 100%;
+    /* border: 1px dotted #cb99c5;  정보뜰때등장*/
 }
 
 .sec, ul{
@@ -37,9 +51,31 @@
     align-items: center;
 }
 
-input[type=date]{
+input[type=date], fieldset{
     width: 40%;
     height: 50%;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+label{
+    margin-left: 1%;
+    margin-right: 5%;
+}
+
+ul > a{
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    color: black;
 }
 
 select{
@@ -110,4 +146,21 @@ ul{
   
   .spBlue {
     color: blue;
+}
+
+#mvinfo2{
+    padding: 2%;
+}
+
+#infoMain{
+    font-weight: bold;
+    background-color: #dfddfd;
+    padding: 0.5%;
+    margin-bottom: 0.5%;
+    color: black;
+}
+
+.infoTitle{
+    color: darkgrey;
+    font-weight: bold;
 }

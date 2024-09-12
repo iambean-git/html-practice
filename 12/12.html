@@ -28,13 +28,15 @@
             <section class="sec">
                 <div class="divDt">
                     <input type="date" id="dt" name="dt" />
-
-                    <select id="sel1" name="sel1">
-                        <option value="default" selected>전체</option>
-                        <option value="K">한국영화</option>
-                        <option value="F">외국영화</option>
-                    </select>
-
+                    <fieldset>
+                        <input type="radio" id="r1" name="nation" value="default" checked="checked">
+                        <label for="r1"> 전체 </label>
+                        <input type="radio" id="r2" name="nation" value="K">
+                        <label for="r2"> 한국영화 </label>
+                        <input type="radio" id="r3" name="nation" value="F">
+                        <label for="r3"> 외국영화 </label>
+                    </fieldset>
+                    
                 </div>
                 
                 
@@ -52,8 +54,16 @@
                 </ul>
             </section>
 
-
         </main>
+
+        <footer id="mvfooter">
+            <div id="mvinfo">
+                <div id="mvinfo2">
+                    
+                </div>
+            </div>
+        </footer>
+
     </form>
 </body>
 
