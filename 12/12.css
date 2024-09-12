@@ -182,7 +182,6 @@ ul{
 
     header{
         height: fit-content;
-
         justify-content: space-between;
         align-items: center;
         padding: 3%;
@@ -219,18 +218,6 @@ ul{
         flex-direction: column;
         justify-content: center;
         align-items: center; 
-        /* margin-top: 0%;
-        width: 80%;
-        height: 75px;
-        background-color: rgb(253, 245, 255);
-        border-radius: 10px ;
-        border: 1px dotted #cb99c5;
-    
-        display: flex;
-    
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; */
     }
 
     input[type=date]{
@@ -248,16 +235,5 @@ ul{
     .mvli{
         padding-left: 2%;
         padding-right: 1%;
-        /* list-style-type: none;
-        height:15px;
-        width: 100%;
-        margin: 0px 2px;
-        padding: 22px;
-    
-        display: flex;
-    
-        flex-direction: row;
-        justify-content: start;
-        align-items: center; */
     }
 }
