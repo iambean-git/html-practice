@@ -57,6 +57,12 @@ label{
     margin-right: 5%;
 }
 
+ul > a{
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+}
+
 select{
     width: 15%;
     height: 50%;

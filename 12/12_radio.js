@@ -26,14 +26,16 @@ const getData = (selDt, ul,radioBtn) =>{
             let dailyBoxOfficeList = data.boxOfficeResult.dailyBoxOfficeList;
 
             let tm = dailyBoxOfficeList.map(item => 
-                `<li class="mvli">
+                `
+                <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=${item.movieNm}" >
+                <li class="mvli">
                     <span class = "rank"> ${item.rank} </span>
-                    <span class = "movieNM"> ${item.movieNm} </span>
+                    <span class = "movieNM"> ${item.movieNm} </span>    
                     <span class= "openDt">(${item.openDt})  </span>
                     <span class= "rankInten">
                     ${item.rankInten > 0 ? '<span class="spRed">▲</span>' : (item.rankInten==0 ? '-':'<span class="spBlue">▼</span>')} 
                     &nbsp;${item.rankInten != 0 ? Math.abs(item.rankInten) : ''} </span>
-                </li>`);
+                </li></a>`);
             ul.innerHTML = tm.join('');
             ul.style.border = '1px dotted rgb(177, 177, 177)';
 
@@ -48,10 +50,21 @@ const getData = (selDt, ul,radioBtn) =>{
 }
 
 //radio값 가져오기
-const getRadio = () => {
-    //라디오 요소 가져오기
-    
-}
+// const getRadio = () => {
+//     //라디오 요소 가져오기(방법1)
+//     const r1 = document.querySelector('#r1');
+//     const r2 = document.querySelector('#r2');
+//     const r3 = document.querySelector('#r3');
+
+//     if (r1.checked) return r1.value;
+//     else if (r2.checked) return r2.value;
+//     else if (r3.checked) return r3.value;
+
+//     //라디오 요소 가져오기(방법2)
+//     const radioCheck = document.querySelector('input[name=nation]:checked');
+//     console.log("radioCheck is" , radioCheck);
+//     return radioCheck.value;
+// }
 
 //어제 날짜 구하기 함수
 const getYesterday = () => {
@@ -72,6 +85,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const dt = document.querySelector('#dt');
     const ul = document.querySelector('.sec>ul');
     const radioBtn = document.getElementsByName('nation');
+
+    //체크된 라디오만 가져오기
+    //const radioCheck = document.querySelector('input[name=nation]:checked');
+    //console.log("radioCheck is" , radioCheck);
   
     //어제날짜구하기
     let yesterday = getYesterday();
