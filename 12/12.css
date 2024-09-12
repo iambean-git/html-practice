@@ -175,6 +175,10 @@ ul{
         margin-left: 5%;
         display: flex;
     }
+    #mvinfo{
+        width: 90%;
+        font-size: 0.8rem;
+    }
 
     header{
         height: fit-content;
@@ -239,5 +243,21 @@ ul{
         height: 40%;
         margin-top: 0.5%;
         
+    }
+
+    .mvli{
+        padding-left: 2%;
+        padding-right: 1%;
+        /* list-style-type: none;
+        height:15px;
+        width: 100%;
+        margin: 0px 2px;
+        padding: 22px;
+    
+        display: flex;
+    
+        flex-direction: row;
+        justify-content: start;
+        align-items: center; */
     }
 }
