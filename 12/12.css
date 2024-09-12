@@ -9,11 +9,10 @@
 }
 
 #boxofficeMain{ 
-    height: 600px;
+    height: fit-content;
 }
 
 #mvfooter{
-    
     width: 100%;
 }
 
@@ -109,6 +108,11 @@ ul{
     border-bottom: 1px solid rgb(158, 197, 231);
 }
 
+.moreinfo{
+    margin: 10px 0px 10px 0px;
+    font-size: small;
+    color: rgb(121, 121, 121);
+}
 .rank{
     margin-right: 5%;
 
@@ -235,5 +239,10 @@ ul{
     .mvli{
         padding-left: 2%;
         padding-right: 1%;
+    }
+
+    .moreinfo{
+        margin: 0.5rem 0 0 0;
+        font-size: 0.7rem;
     }
 }
