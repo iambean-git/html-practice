@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 for(let box of boxes){
                     box.innerHTML = `${box.getAttribute('id').slice(-1)}`;
                 }
-                arr = [0,0,0,0,0,0,0,0,1];
                 cnt = 0;
                 isShuffle = false;
                 btnMain.innerHTML = '폭탄섞기';
@@ -48,13 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
             //실패시 더이상 클릭 안되도록 하기
             if(msg.innerHTML=='실패!!!!')   return;
 
+            //이미 이미지로 바뀌어있으면 클릭이벤트 실행X (중복 실행 방지)
+            if (box.innerHTML.includes('img'))  return;
+
             //박스 클릭시 박스 번호 확인
             boxNum = box.getAttribute('id').slice(-1);
 
             //배열의 해당 번호가 0이면 하트로 바꾸기
             if(arr[boxNum-1] === 0){
                 box.innerHTML = `<img src="../img/hart.png" />`;
-                arr[boxNum-1] = -1;
                 cnt++;
                 if(cnt === 8){
                     arr.indexOf(1);
@@ -68,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     //초기화
                     btnMain.textContent = '다시하기';                 
                 } 
-                return;
                 
             } else if (arr[boxNum-1] === 1) {    //폭탄클릭
                 box.innerHTML = `<img src="../img/boom.png" />`;
